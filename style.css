@@ -1,0 +1,72 @@
+* {
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}   
+.main {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    margin: 50px auto;
+}
+.container {
+    display: flex;
+}
+.first_one {
+    display: flex;
+    flex: 1;
+    margin-right: 10px;
+
+}
+.text_on_the_photos_turned {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+.text_on_the_photos_turned h2 span{
+    position: absolute;
+    left: -10px;
+    
+    transform: rotate(-90deg);
+    bottom: 60px;
+}
+.rightside   {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+}
+.all_down {
+    display: flex;
+}
+.all_the_photos {
+    margin: 0 10px;
+}
+
+
+.text_on_the_photos_turned h2 span::after {
+    content: '';
+    width: 30px;
+    height: 0.5px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 10px;
+    vertical-align: middle;
+    background-color: red;
+    
+}
+.all_the_photos:hover img {
+    opacity: 0.75;
+	-webkit-animation: flash 3s;
+	animation: flash 3s;
+    
+    
+    
+   
+}
+
+
+

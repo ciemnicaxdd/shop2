@@ -1,0 +1,253 @@
+* {
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+}
+.container img {
+    width: 100%;
+    height: 100%;
+}   
+.main {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    margin: 50px auto;
+}
+.container {
+    display: flex;
+}
+.first_one {
+    display: flex;
+    flex: 1;
+    margin-right: 10px;
+
+}
+.text_on_the_photos_turned {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+.text_on_the_photos_turned h2 span{
+    position: absolute;
+    left: -10px;
+    
+    transform: rotate(-90deg);
+    bottom: 60px;
+}
+.rightside   {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+}
+.all_down {
+    display: flex;
+}
+.all_the_photos {
+    margin: 0 10px;
+}
+
+
+.text_on_the_photos_turned h2 span::after {
+    content: '';
+    width: 30px;
+    height: 0.5px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 10px;
+    vertical-align: middle;
+    background-color: red;
+    
+}
+.all_the_photos:hover img {
+    opacity: 0.75;
+	-webkit-animation: flash 3s;
+	animation: flash 3s;
+    
+    
+    
+   
+}
+#line{
+    display: flex;
+    border-left: 0.5px solid red;
+  height: 50px;
+  position: absolute;
+
+ 
+  top: 0;
+  margin-top: 610px;
+  transform: rotate(-90deg);
+  justify-content: center;
+}
+#all_on_bot{
+    display: flex  ;
+    margin-top: 180px;
+   
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+    
+}
+#top_products{
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+}
+#links{
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    padding: 15px;
+    text-decoration: none;
+    
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-family: 'Dosis', sans-serif;
+}
+a:visited {
+    color: rgb(73, 73, 73);
+    font-family: 'Dosis', sans-serif;
+}
+a:hover {
+    color: rgb(255, 53, 53);
+    font-family: 'Dosis', sans-serif;
+}
+a:active {
+    color: #000;
+    font-family: 'Dosis', sans-serif;
+}
+
+.top h1::before {
+
+    display: block;
+    height: 1px;
+    
+    width: 30px;
+    content: '';
+    margin: 20px auto;
+    background-color: red;
+}
+.top{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 50px auto;
+    
+}
+.pictures {
+    position: relative;
+    display: flex;
+}
+.on_the_picture {
+    content: '';
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    z-index: 21;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.on_the_picture:hover {
+    opacity: .4;
+}
+.slider_on_whole {
+    margin: 0 auto;
+}
+.sliding_with_pictures {
+    display: flex;
+    flex: 1;
+    
+}
+.used_on {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+
+.that_thing_on_the_hover_2s {
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 29;
+    
+}
+.on_the_picture:hover + .that_thing_on_the_hover_2s {  
+    display: inline-block;
+    
+}
+.that_thing_on_the_hover_2 {
+    float: left;
+    
+}
+.what_kind_of_clothes:hover {
+    color: rgb(131, 36, 12);
+}
+
+.used_on h3:hover {
+    color: rgb(187, 54, 21);
+}
+.that_thing_on_the_hover_1:after {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 22px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    border: 22px solid transparent;
+    border-top-color: rgb(102, 16, 5);
+    z-index: 26;
+    
+    
+}
+.used_on h3 {
+    color: rgb(22, 22, 22);
+    margin: 0 ;
+}
+.that_thing_on_the_hover_2 img{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    transform: translate(-50%, 50%);
+    z-index: 27;
+}
+
+.money {
+    color: rgb(167, 46, 16);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+
+.what_kind_of_clothes {
+    color: rgb(114, 114, 114);
+    font-size: 11px;
+    margin: 20px 0 10px 0 ;
+}
+
+.that_thing_on_the_hover_1 { 
+    margin: 0 5px;
+    width: 0;
+    height: 0;
+    border: 22px solid transparent;
+    border-bottom-color: rgb(102, 16, 5);
+    position: relative;
+    top: -22px;
+    opacity: 1;
+    z-index: 26;
+    
+}
+.top h1{
+    font-size: 42px;
+}
